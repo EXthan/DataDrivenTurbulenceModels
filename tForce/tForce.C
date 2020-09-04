@@ -103,6 +103,7 @@ tForce::tForce
         dimensionedScalar("epsilon",dimensionSet(0,2,-3,0,0,0,0),1.0)
     ),
     
+    //Reynolds force vector
     t_
     (
         IOobject
