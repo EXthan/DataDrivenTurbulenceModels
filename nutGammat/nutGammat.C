@@ -103,6 +103,7 @@ nutGammat::nutGammat
         dimensionedScalar("epsilon",dimensionSet(0,2,-3,0,0,0,0),1.0)
     ),
 
+	//model coefficients
     couplingFactor_
     (
         dimensioned<scalar>::lookupOrAddToDict
@@ -123,6 +124,7 @@ nutGammat::nutGammat
         )
     ),
 
+	//fields
     nut_
     (
         IOobject
