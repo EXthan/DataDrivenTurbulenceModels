@@ -1,7 +1,7 @@
 # DataDrivenTurbulenceModels
 OpenFOAM's Data-Driven Turbulence Models.
 
-These models were developed in OpenFOAM-4.x
+These models were developed in OpenFOAM-4.x and OpenFOAM-7
 
 Models are used to correct RANS turbulent flows by using Machine Learning predicted quantities or direct injection of DNS
 or other high-fidelity simulations'data (e.g. LES).
