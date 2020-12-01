@@ -262,15 +262,15 @@ nutGammaR::divDevRhoReff
                 U,
                 "laplacian(nuEff,U)"
             )
-        + fvc::div
+            + fvc::div
             (
                 this->alpha_*rho_*R_
                 + couplingFactor_
                 *this->alpha_*rho_*this->nut()*fvc::grad(U),
                 "div(devRhoReff)"
             )
-        - fvc::div(this->alpha_*rho_*this->nu()*dev2(T(fvc::grad(U))))
-        - fvm::laplacian(this->alpha_*rho_*this->nuEff(), U)
+            - fvc::div(this->alpha_*rho_*this->nu()*dev2(T(fvc::grad(U))))
+            - fvm::laplacian(this->alpha_*rho_*this->nuEff(), U)
         );
     }
     else
@@ -283,9 +283,9 @@ nutGammaR::divDevRhoReff
                 U,
                 "laplacian(nuEff,U)"
             )
-        + fvc::div(this->alpha_*rho_*dev(R_))
-        - fvc::div(this->alpha_*rho_*this->nu()*dev2(T(fvc::grad(U))))
-        - fvm::laplacian(this->alpha_*rho_*this->nuEff(), U)
+            + fvc::div(this->alpha_*rho_*dev(R_))
+            - fvc::div(this->alpha_*rho_*this->nu()*dev2(T(fvc::grad(U))))
+            - fvm::laplacian(this->alpha_*rho_*this->nuEff(), U)
         );
     }
 }
