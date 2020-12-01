@@ -16,7 +16,7 @@ Models' source terms:
 - **nutGammat** - gamma vector
   - Injects the vector ***gamma*** into a Reynolds Force Vector Transport Equation, which produces a ***t*** that is injected into the momentum balance. A turbulent viscosity nut from the baseline RANS simulation is required.
 
-Models were constructed using OF's *kEpsilon* turbulence model.
+Models were constructed using OF's *ShihQuadraticKE* turbulence model.
 
 To include the library in your OF installation use the command:
 1) Pull the repository, preferably into your $WM_PROJECT_USER_DIR

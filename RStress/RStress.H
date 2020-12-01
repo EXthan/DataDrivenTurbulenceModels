@@ -62,7 +62,7 @@ protected:
 
     // Protected data
 
-        //Dummy declarations required by OpenFOAM's baseline kEpsilon
+        //Dummy declarations required by OpenFOAM's baseline ShihQuadraticKE
         //turbulence model used as a template
         volScalarField k_;
         volScalarField epsilon_;

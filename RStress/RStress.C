@@ -73,7 +73,7 @@ RStress::RStress
         propertiesName
     ),
 
-    //Dummy declarations required by OpenFOAM's baseline kEpsilon
+    //Dummy declarations required by OpenFOAM's baseline ShihQuadraticKE
     //turbulence model used as a template
     k_
     (
