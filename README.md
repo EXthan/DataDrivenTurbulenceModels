@@ -10,6 +10,7 @@ Models' source terms:
 - **RStress** - Reynolds Stress Tensor R
   - Directly injects the deviatoric part of ***R*** into the momentum balance
 - **tForce** - Reynolds Force Vector t
+  - Based on the work by Cruz et al. (2019) available on https://doi.org/10.1016/j.compfluid.2019.104258
   - Directly injects the vector ***t*** into the momentum balance
 - **nutGammaR** - Symmetric tensor Gamma
   - Injects the tensor ***Gamma*** into a Reynolds Stress Transport Equation, which produces an ***R*** whose deviatoric part is injected into the momentum balance. A turbulent viscosity nut from the baseline RANS simulation is required.
@@ -26,3 +27,5 @@ To include the library in your OF installation use the command:
   `libs ("libmyDataDrivenRASModels.so");`
 5) Change the turbulence model in `constant/turbulenceProperties` into one of the 4 models of this library.
   
+# References
+- Cruz, Matheus A., et al. "The use of the Reynolds force vector in a physics informed machine learning approach for predictive turbulence modeling." Computers & Fluids 192 (2019): 104258. https://doi.org/10.1016/j.compfluid.2019.104258
